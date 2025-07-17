@@ -9,6 +9,8 @@
     <title>Eyad ahmed</title>
   </head>
   <body>
+    <!-- loading -->
+    <!-- <div class="loader-wrapper"><div class="loader">Loading . . .</div></div> -->
     <!-- navbar -->
     <nav>
       <img class="logo" src="logo.png" alt="the-logo" /><span class="span"
@@ -24,17 +26,25 @@
     <!-- hero section -->
     <section class="hero">
       <video
-        src="7101913-uhd_2560_1440_25fps.mp4"
+        src="video2.mp4"
         autoplay
         muted
         loop
+        playsinline
         id="hero-bg"
       ></video>
       <div class="hero-container">
-        <div class="my-name">&nbsp;&nbsp;&nbsp;&nbsp;I'm Eyad Ahmed</div>
-        <div class="my-job">Front-end web&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div class="auto-type"></div>
-        <div class="quote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turn imagination into reality</div>
+        <div class="my-name">I'm Eyad Ahmed</div>
+        <div class="my-job">
+          Front-End Web&nbsp;<div class="auto-type"></div>
+        </div>
+        
       </div>
+      <div class="q-wrapper">
+      <div class="quote">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turn imaginations into reality
+      </div>
+    </div>
     </section>
 
     <!-- about section -->
@@ -47,6 +57,7 @@
     <section class="contact"></section>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
