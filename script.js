@@ -142,15 +142,37 @@ gsap.to(".line", {
 // parallax scroll animation
 
 let about = document.querySelector(".about")
-  gsap.to(".about-image", {
-    y: 100,
-    ease: "none",
-    scrollTrigger: {
+gsap.to(".about-image", {
+  y: 200,
+  ease: "none",
+  scrollTrigger: {
     trigger: ".wrapper-about",
     scrub: true,
     start: "+=50 center",
     end: "+=200",
-    }
-
+  }
 })
 
+
+  // projects opacity 1
+
+gsap.to(".project1,.project3", {
+  opacity: 1,
+  y: -60,
+  duration: 1,
+  ease: "power1.out",
+  scrollTrigger: {
+    trigger: ".projects",
+    start: "top top",
+  }
+})
+gsap.to(".project2", {
+  y:30,
+  opacity: 1,
+  duration: 1,
+  ease: "power1.out",
+  scrollTrigger: {
+    trigger: ".projects",
+    start: "top top",
+  }
+})
