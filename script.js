@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     loader.style.cssText = "opacity:0;";
     wLoader.style.cssText = "opacity:0; transition: opacity 1s ease-out ";
-    document.body.style.cssText = "height:3562px";
+    document.body.style.cssText = "height:calc(400vh + 335px)";
   }, 5600);
   setTimeout(() => {
     loader.style.cssText = "display:none;";
@@ -112,7 +112,7 @@ window.addEventListener("scroll", () => {
 gsap.to(".line1, .line2",{
   width: "+=92.15%",
   opacity: 1,
-  duration: 1,
+  duration:.5,
   ease: "power1.out",
   scrollTrigger:{
     trigger: '.quote',
@@ -121,7 +121,7 @@ gsap.to(".line1, .line2",{
 })
 gsap.to(".wh-text", {
   opacity: 1,
-  duration: 1,
+  duration: .5,
   ease: "power1.in",
   x: "60%",
   scrollTrigger: {
@@ -131,7 +131,7 @@ gsap.to(".wh-text", {
 })
 gsap.to(".line", {
   opacity: 1,
-  duration: 2,
+  duration: .5,
   ease: "power1.out",
   scrollTrigger:{
     trigger: ".quote",
@@ -159,20 +159,42 @@ gsap.to(".about-image", {
 gsap.to(".project1,.project3", {
   opacity: 1,
   y: -60,
-  duration: 1,
+  duration: .5,
   ease: "power1.out",
   scrollTrigger: {
-    trigger: ".projects",
+    trigger: ".p-animation",
     start: "top top",
   }
 })
 gsap.to(".project2", {
   y:30,
   opacity: 1,
-  duration: 1,
+  duration: .5,
   ease: "power1.out",
   scrollTrigger: {
-    trigger: ".projects",
+    trigger: ".p-animation",
     start: "top top",
   }
+})
+// ----------------------------------------------------------------------------
+
+//  contact appearing
+
+gsap.from(".whatsapp-contact h1, .whatsapp-contact a, email-box,number-box" ,{
+  opacity: 0,
+    y: 50,
+  duration: .5,
+  scrollTrigger: {
+    trigger: ".contact",
+    start:"top top",
+    }
+})
+gsap.from(".email-box, .number-box", {
+  opacity: 0,
+  x: 50,
+    duration: .5,
+  scrollTrigger: {
+    trigger: ".contact",
+    start:"top top",
+    }
 })
