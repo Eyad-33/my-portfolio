@@ -649,7 +649,7 @@ textarea:hover,
 .number-box {
   position: absolute;
   bottom: 10%;
-  right: 45%;
+  right: 1%;
   background-color: #22333f;
   border-radius: 35px;
   display: flex;
@@ -663,4 +663,112 @@ textarea:hover,
 }
 .number-box img {
   height: 40px;
+}
+
+
+
+/* footer */
+
+footer{
+  height: 335px;
+  width: 100%;
+  position: relative;
+  background-color: #22333F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+footer p{
+  font-family: system-ui;
+  font-size: 24px;
+  font-weight:lighter;
+  width: 85%;
+    height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.f-divider{
+  width: 85%;
+  height: .1px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.social-box{
+  width:35.46%;
+  transform: translateY(50px);
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 10px;
+}
+.social-box a{
+  background-color: white;
+  border-radius: 50%;
+  width: 65px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+}
+.social-box svg{
+  width: 40px;
+  height: 40px;
+  transform: translateY(0);
+  position: inherit;
+  bottom: inherit;
+  left: inherit;
+  cursor: pointer;
+}
+a.git{
+  background-color: #9F9F9F;
+}
+a.git:hover{
+  background-color: #cecece;
+  transition: all .5s cubic-bezier(.34, 1.56, .64, 1) ;
+}
+.git svg{
+  fill:#181717;
+}
+a.face{
+  background-color: #0050D3;
+}
+.face svg{
+  fill: #0866FF;
+}
+a.face:hover{
+  background-color: #4d83da;
+  transition: all .5s cubic-bezier(.34, 1.56, .64, 1) ;
+}
+a.insta{
+  background-color: #C80052;
+}
+a.insta svg{
+  fill :#FF0069
+}
+a.insta:hover{
+  background-color: #d14c83;
+  transition: all .5s cubic-bezier(.34, 1.56, .64, 1) ;
+}
+a.you{
+  background-color: #e02323;
+}
+a.you svg{
+  fill: red;
+}
+a.you:hover{
+  background-color: #ff0000ce;
+  transition: all .5s cubic-bezier(.34, 1.56, .64, 1) ;
+}
+a.x{
+  background-color: #6A6A6A;
+}
+a.x:hover{
+  background-color: #b3b3b3;
+  transition: all .5s cubic-bezier(.34, 1.56, .64, 1) ;
+}
+a.x svg{
+  fill: black;
 }
