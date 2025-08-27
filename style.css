@@ -120,7 +120,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 10000;
 }
 
 .logo {
@@ -315,7 +315,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15%;
 }
 
 .ps {
@@ -440,7 +439,7 @@ section {
 
 .p-parent .text {
   background-color: #d9d9d9d9;
-  font-size: 40px;
+  font-size: 70%;
   font-family: "Marcellus";
   padding: 10px;
   color: black;
