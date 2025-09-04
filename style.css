@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 .marcellus-regular {
   font-family: "Marcellus", serif;
@@ -24,14 +23,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
-.dancing-script {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* general settings */
 
 * {
@@ -121,19 +112,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+  border-radius: 10px;
 }
 
 .logo {
-  width: 220px;
+  width: 150px;
   position: relative;
   transform: translateX(30px);
-}
-
-.span {
-  font-family: "Dancing Script";
-  font-size: 30px;
-  position: absolute;
-  left: 95px;
 }
 
 li {
@@ -240,7 +225,7 @@ section {
 }
 
 .quote {
-  font-size: 40px;
+  font-size: var(--project-quote-fsize);
   font-family: "Cinzel";
   font-weight: bold;
   color: transparent;
@@ -324,7 +309,7 @@ section {
 
 .line {
   font-family: "Cinzel";
-  font-size: 42px;
+  font-size: var(--project-quote-fsize);
   opacity: 0;
 }
 
@@ -404,11 +389,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
   width: 100%;
   height: 65%;
   position: absolute;
   top: 20%;
+  gap: 7%;
 }
 
 .p-parent {
@@ -437,16 +422,19 @@ section {
   z-index: 10;
 }
 
+:root{
+  --project-quote-fsize:270%;
+}
 .p-parent .text {
   background-color: #d9d9d9d9;
-  font-size: 70%;
+  font-size:var(--project-quote-fsize);
+  text-align: center;
   font-family: "Marcellus";
   padding: 10px;
   color: black;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-
 .p-parent .img {
   display: flex;
   justify-content: center;
@@ -503,8 +491,9 @@ svg {
 }
 .c-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10%;
   width: 100%;
   height: 85.5%;
   margin-top: 1%;
@@ -575,7 +564,6 @@ textarea:hover,
   align-items: center;
   flex-direction: column;
   height: 550px;
-  transform: translateX(40%);
 }
 .divider {
   width: 3px;
@@ -609,16 +597,19 @@ textarea:hover,
 }
 .whatsapp-contact h1 {
   font-family: "Cinzel";
-  font-size: 42px;
+  font-size: var(--project-quote-fsize);
   font-weight: 400;
 }
 .whatsapp-contact a {
   font-family: "Cinzel";
-  font-size: 42px;
+  font-size: var(--project-quote-fsize);
   font-weight: 400;
   text-decoration: underline;
   width: 100%;
   text-align: center;
+}
+:root{
+  --email-number-fsize:32px;
 }
 .basic-contact {
   width: 100%;
@@ -643,7 +634,7 @@ textarea:hover,
 }
 .email {
   font-family: "Inter";
-  font-size: 32px;
+  font-size: var(--email-number-fsize);
 }
 .number-box {
   position: absolute;
@@ -658,7 +649,7 @@ textarea:hover,
 }
 .number {
   font-family: "Inter";
-  font-size: 32px;
+  font-size: var(--email-number-fsize);
 }
 .number-box img {
   height: 40px;
@@ -678,6 +669,19 @@ footer{
   align-items: center;
   flex-direction: column;
   gap: 10px;
+}
+footer .img-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.img-wrapper img{
+  width:100px;
+  border-radius:20px;
+  margin-right: 100px;
+  margin-bottom: 40px;
+  position: absolute;
 }
 footer p{
   font-family: system-ui;
@@ -770,4 +774,39 @@ a.x:hover{
 }
 a.x svg{
   fill: black;
+}
+
+
+/* tablet */
+@media(max-width : 900px){
+  :root{
+    --project-quote-fsize:200%;
+    --email-number-fsize:150%;
+  }
+  .gif-box {
+  width: 300px;
+  height: 380px;
+}
+.glass{
+  width: 330px;
+    height: 450px;
+}
+form{
+  width: 300px;
+}
+form input{
+  width: 300px;
+}
+.email-box{
+  width: 118%;
+}
+.number-box{
+  width: 79%;
+}
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+  
 }
